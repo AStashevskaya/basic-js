@@ -5,11 +5,20 @@ module.exports = class DepthCalculator {
     this.level = 0
     this.maxlevel = 0
   }
+
   calculateDepth( arr ) {
-    arr.array.forEach(element => {
-      
-      
-    });
-    // remove line with error and write your code here
-  }
+    if (Array.isArray(arr)){
+       this.level++
+      let a 
+      for (let el of arr){
+        if(Array.isArray(el)){
+          a = true
+         break
+        }}
+        arr = arr.flat()
+        a ?  this.calculateDepth(arr) : this.maxlevel = this.level
+    }
+    this.level = 0
+    return this.maxlevel
+   }
 };
