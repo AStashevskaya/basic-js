@@ -12,5 +12,4 @@ module.exports = function createDreamTeam(members) {
  let word = letters.sort().join('')
  console.log(word)
   return word
-  // remove line with error and write your code here
 };
